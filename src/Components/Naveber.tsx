@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image'
 import React, { useState } from 'react'
 import { IoMenu } from 'react-icons/io5'
 import { TbXboxXFilled } from 'react-icons/tb'
@@ -14,7 +15,7 @@ const Naveber = () => {
           {/* Logo */}
           <div className=''>
             <a href="/">
-              <img src="#" alt="#" />
+              <Image src="/Image/figma.png" width={40} height={40} className='' alt="#" />
             </a>
           </div>
           {/* Big devices Menu */}
