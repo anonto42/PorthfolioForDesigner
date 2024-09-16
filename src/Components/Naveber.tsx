@@ -17,6 +17,7 @@ const Naveber = () => {
               <img src="#" alt="#" />
             </a>
           </div>
+          {/* Big devices Menu */}
           <div className='hidden w-[400px] h-full text-white md:flex justify-between items-center'>
             <a href="/">
               <h4 className='hover:scale-110 hover:text-[#dfdfdf] duration-150 active:scale-110'>Home</h4>
