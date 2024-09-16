@@ -3,7 +3,9 @@ import Layout from '../Layout/Layout'
 
 const page = () => {
   return (
-    <Layout></Layout>
+    <Layout>
+      <div className='w-full min-h-svh'></div>
+    </Layout>
   )
 }
 
