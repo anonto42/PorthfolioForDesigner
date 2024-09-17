@@ -1,13 +1,9 @@
-"use client"
-import Image from 'next/image'
 import React, { useState } from 'react'
 import { IoMenu } from 'react-icons/io5'
 import { TbXboxXFilled } from 'react-icons/tb'
 
-type MenuItem = "ON" | "OFF"
-
 const Naveber = () => {
-  const [ manu , setManu ] = useState<MenuItem>("OFF");
+  const [ manu , setManu ] = useState("OFF");
   return (
     <div className='w-full h-[80px] bg-slate-400'>
       <div className='max-w-[1400px] mx-auto h-full px-6 xl:px-0'>
@@ -15,7 +11,7 @@ const Naveber = () => {
           {/* Logo */}
           <div className=''>
             <a href="/">
-              <Image src="/Image/figma.png" width={40} height={40} className='' alt="#" />
+              <img src="/vite.svg" className='w-[40px] h-[40px]' alt="#" />
             </a>
           </div>
           {/* Big devices Menu */}
@@ -23,10 +19,10 @@ const Naveber = () => {
             <a href="/">
               <h4 className='hover:scale-110 hover:text-[#dfdfdf] duration-150 active:scale-110'>Home</h4>
             </a>
-            <a href="/">
+            <a href="/work">
               <h4 className='hover:scale-110 hover:text-[#dfdfdf] duration-150 active:scale-110'>Work</h4>
             </a>
-            <a href="/">
+            <a href="/contact">
               <h4 className='hover:scale-110 hover:text-[#dfdfdf] duration-150 active:scale-110'>Contact</h4>
             </a>
           </div>
@@ -43,10 +39,10 @@ const Naveber = () => {
                 <a href="/" className='text-[white] hover:text-[#b4bccf] block font-semibold'>Home</a>
               </div>
               <div className='w-[60px] mx-auto mb-3 h-[30px] hover:scale-110  duration-150 active:scale-110'>
-                <a href="/" className='text-[white] hover:text-[#b4bccf] block font-semibold'>Work</a>
+                <a href="/work" className='text-[white] hover:text-[#b4bccf] block font-semibold'>Work</a>
               </div>
               <div className='w-[60px] mx-auto mb-3 h-[30px] hover:scale-110  duration-150 active:scale-110'>
-                <a href="/" className='text-[white] hover:text-[#b4bccf] block font-semibold'>Contact</a>
+                <a href="/contact" className='text-[white] hover:text-[#b4bccf] block font-semibold'>Contact</a>
               </div>
             </div>
           </div>
